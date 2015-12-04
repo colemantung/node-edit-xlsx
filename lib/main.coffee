@@ -37,6 +37,10 @@ class EditXlsx
       if obj.options.dir
         mkdirp.sync obj.name
         continue
+      else
+        dirName = path.dirname(obj.name)
+        if dirName != '.'
+          mkdirp.sync dirName
       @files.push obj.name
       fs.writeFileSync obj.name, obj.asBinary(), opts
 
