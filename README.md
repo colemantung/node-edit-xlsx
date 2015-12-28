@@ -1,4 +1,4 @@
-# edit-xlsx
+# adr-edit-xlsx
 
 Edit an existing xlsx file. Things to be able to do are simple. Read and write cell values. That's all. Available data types are boolean, number and string, not formula.
 
@@ -6,14 +6,14 @@ Edit an existing xlsx file. Things to be able to do are simple. Read and write c
 ## Install
 
 ```shell
-npm install edit-xlsx --save-dev
+npm install adr-edit-xlsx --save-dev
 ```
 
 
 ## Usage
 
 ```js
-var EditXlsx = require('edit-xlsx');
+var EditXlsx = require('adr-edit-xlsx');
 
 var data = {
   title: 'AKIRA',
